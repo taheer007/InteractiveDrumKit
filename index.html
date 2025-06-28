@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Drum Kit</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="title">Drum 🥁 Kit</h1>
+
+  <button id="themeToggle">🎨 Toggle Theme</button>
+
+  <!-- ✅ Volume Slider (hidden by default) -->
+  <div id="volume-control">
+    🔊 Volume:
+    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+  </div>
+
+  <div class="set">
+    <button class="B drum" title="Tom-1">B</button>
+    <button class="E drum" title="Tom-2">E</button>
+    <button class="A drum" title="Tom-3">A</button>
+    <button class="T drum" title="Tom-4">T</button>
+    <button class="D drum" title="Snare">D</button>
+    <button class="R drum" title="Crash">R</button>
+    <button class="U drum" title="Kick">U</button>
+    <button class="M drum" title="Crash">M</button>
+    <button class="S drum" title="Tom-4">S</button>
+    <button class="Y drum" title="Tom-1">Y</button>
+  </div>
+
+  <!-- Visual Meter -->
+  <div id="visual-meter">
+    <div class="bar" id="bar1"></div>
+    <div class="bar" id="bar2"></div>
+    <div class="bar" id="bar3"></div>
+    <div class="bar" id="bar4"></div>
+    <div class="bar" id="bar5"></div>
+  </div>
+
+  <!-- Recording Controls -->
+  <div id="controls">
+    <button id="startRecord">⏺️ Record</button>
+    <button id="stopRecord">🛑 Stop</button>
+    <button id="playRecord">▶️ Play</button>
+  </div>
+
+  <footer>
+    Made with ❤️ in INDIA.
+  </footer>
+
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

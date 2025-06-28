@@ -1,0 +1,157 @@
+body {
+  text-align: center;
+  background-color: #283149;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+  margin-top: 50px;
+}
+
+.set {
+  margin: 5% auto;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Individual drum images */
+.B { background-image: url("images/tom-1.png"); }
+.E { background-image: url("images/tom-2.png"); }
+.A { background-image: url("images/tom-3.png"); }
+.T { background-image: url("images/tom-4.png"); }
+.D { background-image: url("images/snare.png"); }
+.R { background-image: url("images/crash.png"); }
+.U { background-image: url("images/kick-bass.png"); }
+.M { background-image: url("images/crash.png"); }
+.S { background-image: url("images/tom-4.png"); }
+.Y { background-image: url("images/tom-1.png"); }
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #dbdff3;
+  opacity: 0.5;
+}
+
+/* Visual meter */
+#visual-meter {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 100px;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.bar {
+  width: 10px;
+  background: #00e676;
+  height: 10px;
+  transition: height 0.2s ease;
+  border-radius: 5px;
+}
+
+/* Toggle Button */
+#themeToggle {
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #DA0463;
+  color: #fff;
+}
+
+/* Light Theme */
+.light-theme {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+.light-theme .drum {
+  background-color: #fff;
+  color: #222;
+  border-color: #999;
+  text-shadow: none;
+}
+
+/* Neon Theme */
+.neon-theme {
+  background-color: #000;
+  color: #39ff14;
+}
+
+.neon-theme .drum {
+  background-color: #111;
+  color: #39ff14;
+  text-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+  border-color: #39ff14;
+}
+
+.neon-theme h1 {
+  text-shadow: 0 0 10px #39ff14, 0 0 30px #39ff14;
+}
+
+
+#controls {
+  margin-top: 30px;
+}
+
+#controls button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #DA0463;
+  color: white;
+}
+
+#controls button:hover {
+  background-color: #ff3366;
+}
+
+
+/*Volume UP/DOWN Control*/
+#volume-control {
+  display: none; /* Hidden initially */
+  color: #DBEDF3;
+  font-size: 1.5rem;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #404B69;
+  width: fit-content;
+  border-radius: 12px;
+}
+
+#volumeSlider {
+  width: 200px;
+  margin-left: 10px;
+}
